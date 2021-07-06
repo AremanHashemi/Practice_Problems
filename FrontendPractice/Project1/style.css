@@ -1,0 +1,17 @@
+.grid {
+    display: flex;
+    flex-direction: row;
+}
+
+.row {
+    padding: 10%;
+}
+
+.col {
+    padding-top: 50%;
+    border: 2px solid red;
+    height: 100px;
+    width: 200px;
+    margin: 30%;
+    text-align: center;
+}

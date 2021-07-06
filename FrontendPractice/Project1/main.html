@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Grid Practice</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="grid">
+        <div class="row">
+            <div class="col" onclick="increment(this)">0</div>
+            <div class="col" onclick="increment(this)">0</div>
+            <div class="col" onclick="increment(this)">0</div>
+        </div>
+        <div class="row">
+            <div class="col" onclick="increment(this)">0</div>
+            <div class="col" onclick="increment(this)">0</div>
+            <div class="col" onclick="increment(this)">0</div>
+        </div>
+        <div class="row">
+            <div class="col" onclick="increment(this)">0</div>
+            <div class="col" onclick="increment(this)">0</div>
+            <div class="col" onclick="increment(this)">0</div>
+        </div>
+    </div>
+    <button class='increment-button' onclick="incrementAll()">Click here</button>
+</body>
+<script>
+    function increment(caller) {
+        caller.innerHTML = Number.parseInt(caller.innerHTML) + 1 
+    }
+    function incrementAll() {
+        const allCols = document.getElementsByClassName("col");
+        let i = 0;
+        for (let caller of allCols) {
+            setTimeout(() => {
+                caller.innerHTML = Number.parseInt(caller.innerHTML) + 1;
+            }, i * 1000);
+        }
+    }
+</script>
+</html>
