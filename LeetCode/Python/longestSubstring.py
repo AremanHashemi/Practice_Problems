@@ -30,7 +30,6 @@ while start != end of string
 
 ''' 
 
-from typing import List
 
 def lengthOfLongestSubstring(s: str) -> int:
 	longest_len = 0
