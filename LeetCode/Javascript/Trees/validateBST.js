@@ -12,7 +12,7 @@
  */
  var isValidBST = function(root) {
 	const between = function(x, min, max) {
-		return x >= min && x <= max;
+		return x > min && x < max;
 	}
 	const helper = function(root, min, max) {
 		if (root === null) {

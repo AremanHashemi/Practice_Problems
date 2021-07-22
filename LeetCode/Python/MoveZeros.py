@@ -28,4 +28,5 @@ def moveZeroes(nums) -> None:
 
 	return nums
 
-print(moveZeroes([1,0,0,2]))
+# print(moveZeroes([1,0,0,2]))
+

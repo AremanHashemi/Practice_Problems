@@ -18,7 +18,6 @@ def plusOne(digits: List[int]) -> List[int]:
 		digits[end] += carryFlag
 		if digits[end] > 9:
 			digits[end] %= 10
-			print(digits)
 			end -= 1
 		else:
 			carryFlag = 0
